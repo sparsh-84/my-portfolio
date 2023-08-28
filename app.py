@@ -35,7 +35,7 @@ DESCRIPTION = """
 EMAIL = "goelsparsh01@gmail.com"
 SOCIAL_MEDIA = {
     "LinkedIn": "https://www.linkedin.com/in/sparsh84/",
-    "GitHub": "https://github.com",
+    "GitHub": "https://github.com/sparsh-84",
     "Instagram": "https://www.instagram.com/sparsh_84/",
 }
 
@@ -166,12 +166,12 @@ if selected == 'Projects':
         st.write("---")
         st.write("""🏆 - Stock and Crypto-Currency Price Analysis with Python (5th semester, Minor):""")
         st.caption("""This online application will display stock and cryptocurrency prices (web scrapped) and visually appealing graphs to learn about price movements.""")
-        st.write("[Visit Github Repo](https://youtu.be/Sb0A9i6d320)")
+        st.write("[Visit Github Repo](https://github.com/sparsh-84/stock-and-crypto-analysis-dashboard)")
         st.write("##")
         st.write("""🏆 - YouTube Content Moderation (6th semester, Minor):""")
         st.caption("""The user will learn more about the subjects covered in the YouTube video, and it also categorises the content under several subheadings. 
     This can be used to check the videos and find any sensitive information they may contain.""")
-        st.write("[Visit Github Repo](https://youtu.be/Sb0A9i6d320)")
+        st.write("[Visit Github Repo](https://github.com/sparsh-84/youtube-content-moderation)")
 
 # # --- WORK HISTORY ---        
 if selected == 'Work History':
