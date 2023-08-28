@@ -5,7 +5,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
-
+from typing_extensions import Literal
 
 # --- PATH SETTINGS ---
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
