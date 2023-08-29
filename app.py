@@ -83,12 +83,13 @@ with col2:
         mime="application/octet-stream",
     )
     st.write("📫", EMAIL)
-    st.write('#')
-    st.markdown("**Connect with Me**")
-    st.write('----')
+    st.subheader("**Connect with Me**")
+    # st.write('----')
     cols = st.columns(len(SOCIAL_MEDIA))
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
         cols[index].write(f":bust_in_silhouette: [{platform}]({link})")
+    # st.write('----')    
+
         
 
 # with col3:
