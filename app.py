@@ -76,12 +76,12 @@ with col2:
     st.title("I am Sparsh Goel")
     # st.title(NAME)
     st.write(DESCRIPTION)
-    st.download_button(
-        label=" 📄 Download Resume",
-        # data=PDFbyte,
-        # file_name=pdf_file.name,
-        mime="application/octet-stream",
-    )
+    # st.download_button(
+    #     label=" 📄 Download Resume",
+    #     data=PDFbyte,
+    #     file_name=pdf_file.name,
+    #     mime="application/octet-stream",
+    # )
     st.write("📫", EMAIL)
     st.subheader("**Connect with Me**")
     # st.write('----')
