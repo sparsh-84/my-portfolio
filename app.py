@@ -137,16 +137,18 @@ if selected == 'About':
             st.subheader(""" 
             Education
 
-            -   :mortar_board: Undergraduate (UG) 2020-24
+            -   :mortar_board: Undergraduate (UG) - 2020-24
                 - Bachelor of Technology in Computer Science & Engineering (CSE) 
                 - Jaypee Institute of Information Technology, Noida
                 - 4th year (7th sem)
                 - Grade: 7 CGPA
-            -   :school_satchel: XIIth 2019-20
+                #
+            -   :school_satchel: XIIth - 2019-20
                 - Delhi Public School, Greater Noida
                 - PCM 
                 - Grade: 94.25%
-            -   :school_satchel: Xth 2017-18
+                #
+            -   :school_satchel: Xth - 2017-18
                 - Delhi Public School, Greater Noida
                 - Grade: 90.6%
         """)
@@ -154,7 +156,7 @@ if selected == 'About':
         with col4:
             st.subheader("""
             Hard Skills
-            - 👩‍💻 Programming: Python (Numpy, Pandas), Django, MySQL, C/C++
+            - 👩‍💻 Programming: Python (Numpy, Pandas), Django, MySQL
             - 📊 Data Visulization: MS Excel, MS PowerPoint, MS Word, Plotly, Seaborn
             - 🗄️ Databases: MySQL, MongoDB
             """)
