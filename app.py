@@ -5,6 +5,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 import requests
 from streamlit_lottie import st_lottie
+from typing_extensions import Literal
 
 
 # --- PATH SETTINGS ---
@@ -46,24 +47,25 @@ with open(resume_file, "rb") as pdf_file:
     PDFbyte = pdf_file.read()
 profile_pic = Image.open(profile_pic)
 
-st.markdown(
-    """
-    <style>
-        # div[data-testid="column"]:nth-of-type(1)
-        # {
-        #     border:10px solid white;
-        # }
+# st.markdown(
+#     """
+#     <style>
+#         # div[data-testid="column"]:nth-of-type(1)
+#         # {
+#         #     border:10px solid white;
+#         # }
 
-        div[data-testid="column"]:nth-of-type(3)
-        {
-            text-align: end;
-        } 
-    </style>
-    """,unsafe_allow_html=True
-)
+#         div[data-testid="column"]:nth-of-type(3)
+#         {
+#             text-align: end;
+#         } 
+#     </style>
+#     """,unsafe_allow_html=True
+# )
 
 # --- HERO SECTION ---
-col1, col2, col3 = st.columns(3, gap="small")
+# col1, col2, col3 = st.columns(3, gap="small")
+col1, col2 = st.columns((1,2))
 with col1:
     st.write("##")
     st.write("##")
@@ -81,17 +83,24 @@ with col2:
         mime="application/octet-stream",
     )
     st.write("📫", EMAIL)
-
-with col3:
-    st_lottie(lottie_social, height= 305)
-    st.write("Connect with Me")
+    st.write('#')
+    st.markdown("**Connect with Me**")
     st.write('----')
-
-with col3:
     cols = st.columns(len(SOCIAL_MEDIA))
     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
-        cols[index].write(f"[{platform}]({link})")
-    st.write('----')
+        cols[index].write(f":bust_in_silhouette: [{platform}]({link})")
+        
+
+# with col3:
+#     st_lottie(lottie_social, height= 305)
+#     st.write("Connect with Me")
+#     st.write('----')
+
+# with col3:
+#     cols = st.columns(len(SOCIAL_MEDIA))
+#     for index, (platform, link) in enumerate(SOCIAL_MEDIA.items()):
+#         cols[index].write(f"[{platform}]({link})")
+#     st.write('----')
 
 
 # --- SOCIAL LINKS ---
@@ -127,16 +136,16 @@ if selected == 'About':
             st.subheader(""" 
             Education
 
-            - ●  Undergraduate (UG)
+            -   :mortar_board: Undergraduate (UG)
                 - Bachelor of Technology in Computer Science & Engineering (CSE) 
                 - Jaypee Institute of Information Technology, Noida
                 - 4th year (7th sem)
                 - Grade: 7 CGPA
-            - ●  XIIth
+            -   :school_satchel: XIIth
                 - Delhi Public School, Greater Noida
                 - PCM 
                 - Grade: 94.25%
-            - ●  Xth
+            -   :school_satchel: Xth
                 - Delhi Public School, Greater Noida
                 - Grade: 90.6%
         """)
@@ -212,9 +221,4 @@ if selected == 'Contact Me':
 
     with right_col:
         st_lottie(lottie_contact, height=280)
-
-
-
-
-
 
